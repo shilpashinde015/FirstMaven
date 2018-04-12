@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "RestResponse": {
+      "type": "object",
+      "properties": {
+        "messages": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "result": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "country": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "abbr": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "largest_city": {
+              "type": "string"
+            },
+            "capital": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "country",
+            "name",
+            "abbr",
+            "area",
+            "largest_city",
+            "capital"
+          ]
+        }
+      },
+      "required": [
+        "messages",
+        "result"
+      ]
+    }
+  },
+  "required": [
+    "RestResponse"
+  ]
+}

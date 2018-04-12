@@ -1,0 +1,112 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "id": {
+      "$id": "/properties/id",
+      "type": "string",
+      "title": "The Id Schema ",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "firstName": {
+      "$id": "/properties/firstName",
+      "type": "string",
+      "title": "The Firstname Schema ",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "lastName": {
+      "$id": "/properties/lastName",
+      "type": "string",
+      "title": "The Lastname Schema ",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "trusted": {
+      "$id": "/properties/trusted",
+      "type": "boolean",
+      "title": "The Trusted Schema ",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "apartments": {
+      "$id": "/properties/apartments",
+      "type": "array",
+      "items": {
+        "$id": "/properties/apartments/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/apartments/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "address": {
+            "$id": "/properties/apartments/items/properties/address",
+            "type": "string",
+            "title": "The Address Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "price": {
+            "$id": "/properties/apartments/items/properties/price",
+            "type": "integer",
+            "title": "The Price Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "square": {
+            "$id": "/properties/apartments/items/properties/square",
+            "type": "integer",
+            "title": "The Square Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "features": {
+            "$id": "/properties/apartments/items/properties/features",
+            "type": "array",
+            "items": {
+              "$id": "/properties/apartments/items/properties/features/items",
+              "type": "string",
+              "title": "The 0th Schema ",
+              "default": "",
+              "examples": [
+                ""
+              ]
+            }
+          },
+          "active": {
+            "$id": "/properties/apartments/items/properties/active",
+            "type": "boolean",
+            "title": "The Active Schema ",
+            "default": false,
+            "examples": [
+              false
+            ]
+          }
+        }
+      }
+    }
+  }
+}
