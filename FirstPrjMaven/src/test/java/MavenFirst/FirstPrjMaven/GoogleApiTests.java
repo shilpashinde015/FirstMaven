@@ -30,7 +30,7 @@ public class GoogleApiTests {
 		.queryParam("destinations","SanFrancisco")
 		.queryParam("mode","car")
 		.queryParam("language","fr-FR")
-		.queryParam("key","AIzaSyD09tZhBvJp2rwEz7UzaQlRcjjGeP3kZMM")
+		.queryParam("key","")
 		.when()
 			.get("/distancematrix/json")
 		.then()
@@ -94,7 +94,7 @@ public class GoogleApiTests {
 	@Test(priority=2)
 	public void getDetailsOnPlace(){
 		Response res=given()
-				.queryParam("key","AIzaSyD09tZhBvJp2rwEz7UzaQlRcjjGeP3kZMM")
+				.queryParam("key","")
 				.queryParam("placeid", placeId)
 		.when()
 				.get("/place/details/json");
@@ -106,7 +106,7 @@ public class GoogleApiTests {
 	@Test(priority=3)
 	public void DeleteNewlyAddedPLace(){
 		Response res=given()
-				.queryParam("key","AIzaSyD09tZhBvJp2rwEz7UzaQlRcjjGeP3kZMM")
+				.queryParam("key","")
 				.contentType(ContentType.JSON)
 				.body("{\"place_id\": \""+placeId+"\"}")
 		.when()
